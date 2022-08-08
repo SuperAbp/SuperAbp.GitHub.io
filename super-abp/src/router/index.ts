@@ -13,6 +13,10 @@ const routes: Array<RouteRecordRaw> = [
     component: Layout,
     children: [
       {
+        path: "",
+        component: () => import("../docs/customize-theme.md"),
+      },
+      {
         path: "vue/customize-theme",
         meta: {
           enTitle: "Customize Theme",

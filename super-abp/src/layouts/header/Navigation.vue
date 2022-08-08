@@ -7,10 +7,10 @@
     disabled-overflow
   >
     <a-menu-item key="docs/vue">
-      <router-link :to="'/docs/vue/introduce'">文档</router-link>
+      <router-link :to="'/docs'">文档</router-link>
     </a-menu-item>
     <a-menu-item key="components">
-      <router-link :to="'/components/overview/'">组件</router-link>
+      <router-link :to="'/utils'">工具</router-link>
     </a-menu-item>
     <template v-if="isMobile">
       <a-menu-item key="github">

@@ -2,7 +2,7 @@
   <h1>
     <a id="logo" :href="'/'">
       <img alt="logo" :src="logo" />
-      Ant Design Vue
+      Super Abp
     </a>
   </h1>
 </template>
