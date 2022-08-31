@@ -5,6 +5,11 @@
         <Logo />
       </a-col>
       <a-col v-bind="colProps[1]" class="menu-row">
+        <SearchBox
+          key="search"
+          :responsive="responsive"
+          @triggerFocus="onTriggerSearching"
+        />
         <Menu :is-mobile="isMobile" />
       </a-col>
     </a-row>
@@ -16,15 +21,20 @@ import { useRoute } from "vue-router";
 import Logo from "./Logo.vue";
 import Menu from "./Menu.vue";
 import { UnorderedListOutlined, CloseOutlined } from "@ant-design/icons-vue";
+import SearchBox from "./SearchBox.vue";
+import { GlobalConfig } from "../../App.vue";
+import { GLOBAL_CONFIG } from "../../SymbolKey";
 export default defineComponent({
   components: {
     Logo,
     Menu,
     UnorderedListOutlined,
+    SearchBox,
     CloseOutlined,
   },
   setup() {
     const route = useRoute();
+    const globalConfig = inject<GlobalConfig>(GLOBAL_CONFIG);
     const isHome = computed(() => {
       return ["", "index", "index-cn"].includes(route.path);
     });
@@ -57,7 +67,8 @@ export default defineComponent({
       searching.value = value;
     };
     return {
-      isMobile: false,
+      isMobile: globalConfig?.isMobile,
+      responsive: globalConfig?.responsive,
       headerClassName: {
         clearfix: true,
         "home-header": isHome.value,

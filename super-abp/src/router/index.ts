@@ -13,17 +13,13 @@ const routes: Array<RouteRecordRaw> = [
     component: Layout,
     children: [
       {
-        path: "",
-        component: () => import("../docs/customize-theme.md"),
-      },
-      {
-        path: "vue/customize-theme",
+        path: "docs/code-generation",
         meta: {
-          enTitle: "Customize Theme",
-          title: "定制主题",
+          enTitle: "Code Generation",
+          title: "代码生成器",
           category: "docs",
         },
-        component: () => import("../docs/customize-theme.md"),
+        component: () => import("../docs/code-generation.md"),
       },
     ],
   },
