@@ -6,16 +6,16 @@
     :selected-keys="[activeMenuItem]"
     disabled-overflow
   >
-    <a-menu-item key="docs/vue">
-      <router-link :to="'/docs'">文档</router-link>
-    </a-menu-item>
-    <a-menu-item key="components">
+    <a-menu-item key="util">
       <router-link :to="'/utils'">工具</router-link>
+    </a-menu-item>
+    <a-menu-item key="modules">
+      <router-link :to="'/modules'">模块</router-link>
     </a-menu-item>
     <template v-if="isMobile">
       <a-menu-item key="github">
         <a
-          href="https://github.com/vueComponent/ant-design-vue"
+          href="https://github.com/SuperAbp"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,10 +1,6 @@
 <template>
   <span id="github-btn" class="github-btn">
-    <a
-      class="gh-btn"
-      href="https://github.com/SuperAbp/superabp.github.io"
-      target="_blank"
-    >
+    <a class="gh-btn" href="https://github.com/SuperAbp" target="_blank">
       <span class="gh-ico" aria-hidden="true"></span>
       <span class="gh-text">Star</span>
     </a>
