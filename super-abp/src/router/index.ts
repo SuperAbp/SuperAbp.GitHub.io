@@ -48,25 +48,34 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("../docs/media.md"),
       },
       {
-        path: "theme",
-        children: [
-          {
-            path: "ztree",
-            meta: {
-              enTitle: "ZTree",
-              title: "ZTree",
-              category: "theme",
-            },
-            component: () => import("../docs/theme/ztree.md"),
-          },
-        ],
+        path: "ztree",
         meta: {
-          enTitle: "theme",
-          title: "主题",
+          enTitle: "ZTree",
+          title: "ZTree",
           category: "modules",
         },
-        component: () => import("../docs/theme.md"),
+        component: () => import("../docs/themes/ztree.md"),
       },
+      // {
+      //   path: "theme",
+      //   children: [
+      //     {
+      //       path: "ztree",
+      //       meta: {
+      //         enTitle: "ZTree",
+      //         title: "ZTree",
+      //         category: "themes",
+      //       },
+      //       component: () => import("../docs/themes/ztree.md"),
+      //     },
+      //   ],
+      //   meta: {
+      //     enTitle: "theme",
+      //     title: "主题",
+      //     category: "modules",
+      //   },
+      //   component: () => import("../docs/theme.md"),
+      // },
     ],
   },
 ];

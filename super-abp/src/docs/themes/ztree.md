@@ -1,14 +1,17 @@
 # ZTree
 ## 安装
-1. 安装`SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree`包
-> Install-Package SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree
+1. 安装zTree
+    > npm i @ztree/ztree_v3
 
-2. 添加`SuperAbpAspNetCoreMvcUiZTreeModule`模块依赖
-``` csharp
-[DependsOn(typeof(SuperAbpAspNetCoreMvcUiZTreeModule))]
-public class YourModule : AbpModule
-{
-}
+2. 安装`SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree`包
+    > Install-Package SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree
+
+3. 添加`SuperAbpAspNetCoreMvcUiZTreeModule`模块依赖
+    ``` csharp
+    [DependsOn(typeof(SuperAbpAspNetCoreMvcUiZTreeModule))]
+    public class YourModule : AbpModule
+    {
+    }
 
 ## resourcemapping.js
 ``` javascript
