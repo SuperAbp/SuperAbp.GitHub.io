@@ -1,5 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import md from "./plugin/md";
+import docs from "./plugin/docs";
 import { resolveComponent } from "vue";
 import Markdown from "vite-plugin-md";
 
@@ -9,7 +11,11 @@ export default defineConfig({
     vue({
       include: [/\.vue$/, /\.md$/],
     }),
-    Markdown(),
+    docs(),
+    md(),
+    vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
   ],
   resolve: {
     alias: {

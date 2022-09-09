@@ -3,15 +3,7 @@ import type { ComputedRef } from "vue";
 import { computed, inject } from "vue";
 import { useRoute, useRouter } from "vue-router";
 const typeOrder: any = {
-  组件总览: { order: -1, en: "Overview" },
-  通用: { order: 0, en: "General" },
-  布局: { order: 1, en: "Layout" },
-  导航: { order: 2, en: "Navigation" },
-  数据录入: { order: 3, en: "Data Entry" },
-  数据展示: { order: 4, en: "Data Display" },
-  反馈: { order: 5, en: "Feedback" },
-  其他: { order: 6, en: "Other" },
-  废弃: { order: 7, en: "Deprecated" },
+  主题: { order: -1, en: "Theme" },
 };
 const useMenus = (): {
   menus: ComputedRef<any[]>;
