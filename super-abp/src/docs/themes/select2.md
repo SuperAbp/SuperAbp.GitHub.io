@@ -20,4 +20,3 @@
 "@node_modules/select2-bootstrap-5-theme/dist/*.*.*": "@libsselect2-bootstrap5-theme/",
 "@node_modules/select2-bootstrap-5-theme/dist/*.*.*.*": "@libsselect2-bootstrap5-theme/"
 ```
-

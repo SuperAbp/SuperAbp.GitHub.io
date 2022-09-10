@@ -1,4 +1,9 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
+import {
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+  RouteRecordRaw,
+} from "vue-router";
 import Layout from "../layouts/index.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -81,7 +86,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior: (to) => {
     if (to.hash) {
