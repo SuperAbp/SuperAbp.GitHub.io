@@ -2,19 +2,19 @@
 
 ## 安装
 
-1. 安装 zTree
+1. 安装`ZTree`
 
    ```bash
    $ npm i @ztree/ztree_v3
    ```
 
    ```bash
-    $ yarn add @ztree/ztree_v3
+   $ yarn add @ztree/ztree_v3
    ```
 
 2. 安装`SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree`包
 
-   ```bash
+   ```ps
    Install-Package SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree
    ```
 
