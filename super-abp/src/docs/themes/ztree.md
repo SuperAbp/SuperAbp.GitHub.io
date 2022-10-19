@@ -40,6 +40,15 @@
 "@node_modules/@ztree/ztree_v3/css/zTreeStyle/img/*.*": "@libs/ztree-v3css/zTreeStyle/img/",
 ```
 
+## 导入Bundle文件
+
+``` html
+<abp-style-bundle name="@ZTreeBundles.Styles.Global"/>
+
+<abp-script-bundle name="@ZTreeBundles.Scripts.Global"/>
+```
+具体可参考[abp bundle](https://docs.abp.io/en/abp/latest/UI/AspNetCore/Bundling-Minification#bundle-contributors)文档
+
 ## 配置
 
 ```csharp

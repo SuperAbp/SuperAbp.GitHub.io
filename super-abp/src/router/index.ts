@@ -53,34 +53,55 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("../docs/media.md"),
       },
       {
+        path: "bootstrap-table",
+        meta: {
+          enTitle: "BootstrapTable",
+          title: "BootstrapTable",
+          type:'主题',
+          category: "modules",
+        },
+        component: () => import("../docs/themes/bootstrap-table.md"),
+      },
+      {
+        path: "bootstrap-file-input",
+        meta: {
+          enTitle: "BootstrapFileInput",
+          title: "BootstrapFileInput",
+          type:'主题',
+          category: "modules",
+        },
+        component: () => import("../docs/themes/bootstrap-file-input.md"),
+      },
+      {
+        path: "bootstrap-icons",
+        meta: {
+          enTitle: "BootstrapIcons",
+          title: "BootstrapIcons",
+          type:'主题',
+          category: "modules",
+        },
+        component: () => import("../docs/themes/bootstrap-icons.md"),
+      },
+      {
         path: "ztree",
         meta: {
           enTitle: "ZTree",
           title: "ZTree",
+          type:'主题',
           category: "modules",
         },
         component: () => import("../docs/themes/ztree.md"),
       },
-      // {
-      //   path: "theme",
-      //   children: [
-      //     {
-      //       path: "ztree",
-      //       meta: {
-      //         enTitle: "ZTree",
-      //         title: "ZTree",
-      //         category: "themes",
-      //       },
-      //       component: () => import("../docs/themes/ztree.md"),
-      //     },
-      //   ],
-      //   meta: {
-      //     enTitle: "theme",
-      //     title: "主题",
-      //     category: "modules",
-      //   },
-      //   component: () => import("../docs/theme.md"),
-      // },
+      {
+        path: "select2",
+        meta: {
+          enTitle: "Select2",
+          title: "Select2",
+          type:'主题',
+          category: "modules",
+        },
+        component: () => import("../docs/themes/select2.md"),
+      }
     ],
   },
 ];
