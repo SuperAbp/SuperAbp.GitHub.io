@@ -35,6 +35,24 @@ const routes: Array<RouteRecordRaw> = [
     redirect: "/modules/media",
     children: [
       {
+        path: "identity",
+        meta: {
+          enTitle: "Identity",
+          title: "Identity",
+          category: "modules",
+        },
+        component: () => import("../docs/identity.md"),
+      },
+      {
+        path: "setting-management",
+        meta: {
+          enTitle: "SettingManagement",
+          title: "设置管理",
+          category: "modules",
+        },
+        component: () => import("../docs/setting-management.md"),
+      },
+      {
         path: "audit-logging",
         meta: {
           enTitle: "AuditLogging",
@@ -46,7 +64,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "media",
         meta: {
-          enTitle: "media",
+          enTitle: "Media",
           title: "文件上传",
           category: "modules",
         },
@@ -57,7 +75,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           enTitle: "BootstrapTable",
           title: "BootstrapTable",
-          type:'主题',
+          type: "主题",
           category: "modules",
         },
         component: () => import("../docs/themes/bootstrap-table.md"),
@@ -67,7 +85,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           enTitle: "BootstrapFileInput",
           title: "BootstrapFileInput",
-          type:'主题',
+          type: "主题",
           category: "modules",
         },
         component: () => import("../docs/themes/bootstrap-file-input.md"),
@@ -77,7 +95,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           enTitle: "BootstrapIcons",
           title: "BootstrapIcons",
-          type:'主题',
+          type: "主题",
           category: "modules",
         },
         component: () => import("../docs/themes/bootstrap-icons.md"),
@@ -87,7 +105,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           enTitle: "ZTree",
           title: "ZTree",
-          type:'主题',
+          type: "主题",
           category: "modules",
         },
         component: () => import("../docs/themes/ztree.md"),
@@ -97,11 +115,11 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           enTitle: "Select2",
           title: "Select2",
-          type:'主题',
+          type: "主题",
           category: "modules",
         },
         component: () => import("../docs/themes/select2.md"),
-      }
+      },
     ],
   },
 ];
