@@ -13,18 +13,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3  
         with:
-          persist-credentials: false
-      - name: Cache Node Modules
-        id: node-cache
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('package-lock.json') }}-${{ hashFiles('package.json') }}
-      - name: Install Dependencies
-        if: steps.node-cache.outputs.cache-hit != 'true'
-        run: yarn
+          persist-credentials: false      
       - name: building
-        run: yarn run build
+        run: |
+          yarn
+          yarn run build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
