@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+defaults:
+  run:
+    working-directory: super-abp
 jobs:
   deploying_vue_project:
     runs-on: ubuntu-latest
@@ -14,8 +17,8 @@ jobs:
       - name: building
         # 执行shell命令
         run: |
-          npm install
-          npm run build
+          yarn
+          yarn run build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
