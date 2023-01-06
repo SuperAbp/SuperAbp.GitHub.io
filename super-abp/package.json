@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/SuperAbp/superabp.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
