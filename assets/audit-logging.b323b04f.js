@@ -1,1 +1,0 @@
-import{d as e,c as o,o as n}from"./index.edccdb36.js";const r={class:"markdown"},m={},p="",d=e({__name:"audit-logging",setup(c,{expose:t}){return t({frontmatter:{},excerpt:void 0}),(a,s)=>(n(),o("div",r))}});export{d as default,p as excerpt,m as frontmatter};
