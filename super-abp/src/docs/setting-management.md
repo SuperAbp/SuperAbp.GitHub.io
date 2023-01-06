@@ -2,7 +2,7 @@
 
 ## 安装
 
-1. 安装`ZTree`
+1. 安装包
 
    ```bash
    $ npm i @super-abp/ng.setting-management
@@ -23,7 +23,7 @@
         ...
         SettingManagementConfigModule.forRoot(),
     ]
-    })
+   })
    ```
 
 3. 配置路由
