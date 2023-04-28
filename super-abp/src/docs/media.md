@@ -76,5 +76,4 @@
 
 ## 使用
 
-使用 http post 方式上传文件
-`/api/super-abp/media`
+使用 http post 方式上传文件`/api/super-abp/media`。其余接口可查看`swagger`

@@ -1,16 +1,16 @@
 # BootstrapTable
 
 ## 安装
+
 1. 安装`BootstrapTable`
 
    ```bash
-   $ npm i bootstrap-table
+   $ npm i @super-abp/bootstrap-table
    ```
 
    ```bash
-   $ yarn add bootstrap-table
+   $ yarn add @super-abp/bootstrap-table
    ```
-
 
 2. 安装`SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.BootstrapTable`包
 
@@ -19,29 +19,26 @@
    ```
 
 3. 添加`SuperAbpAspNetCoreMvcUiBootstrapTableModule`模块依赖
-    ``` csharp
-    [DependsOn(typeof(SuperAbpAspNetCoreMvcUiBootstrapTableModule))]
-    public class YourModule : AbpModule
-    {
-    }
-    ```
+   ```csharp
+   [DependsOn(typeof(SuperAbpAspNetCoreMvcUiBootstrapTableModule))]
+   public class YourModule : AbpModule
+   {
+   }
+   ```
 
-## resourcemapping.js
+## 导入 Bundle 文件
 
-TODO：
+```html
+<abp-style-bundle name="@BootstrapTableBundles.Styles.Global" />
 
-## 导入Bundle文件
-
-``` html
-<abp-style-bundle name="@BootstrapTableBundles.Styles.Global"/>
-
-<abp-script-bundle name="@BootstrapTableBundles.Scripts.Global"/>
+<abp-script-bundle name="@BootstrapTableBundles.Scripts.Global" />
 ```
+
 具体可参考[abp bundle](https://docs.abp.io/en/abp/latest/UI/AspNetCore/Bundling-Minification#bundle-contributors)文档
 
-
 ## 配置（可选）
-``` csharp
+
+```csharp
 Configure<SuperAbpBootstrapTableOptions>(options =>
 {
     // 进行配置

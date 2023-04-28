@@ -5,11 +5,11 @@
 1. 安装`ZTree`
 
    ```bash
-   $ npm i @ztree/ztree_v3
+   $ npm i @super-abp/ztree
    ```
 
    ```bash
-   $ yarn add @ztree/ztree_v3
+   $ yarn add @super-abp/ztree
    ```
 
 2. 安装`SuperAbp.Abp.AspNetCore.Mvc.UI.Packages.ZTree`包
@@ -26,27 +26,14 @@
    }
    ```
 
-## resourcemapping.js
+## 导入 Bundle 文件
 
-```javascript
-"@node_modules/@ztree/ztree_v3/js/jquery.ztree.*.*": "@libs/ztree-v3/js",
-"@node_modules/@ztree/ztree_v3/js/jquery.ztree.*.*.*": "@libs/ztree-v3js",
-"@node_modules/@ztree/ztree_v3/css/demo.css": "@libs/ztree-v3/css/",
-"@node_modules/@ztree/ztree_v3/css/awesomeStyle/*.*": "@libs/ztree-v3css/awesomeStyle/",
-"@node_modules/@ztree/ztree_v3/css/awesomeStyle/img/*.*": "@libsztree-v3/css/awesomeStyle/img/",
-"@node_modules/@ztree/ztree_v3/css/metroStyle/*.*": "@libs/ztree-v3/cssmetroStyle/",
-"@node_modules/@ztree/ztree_v3/css/metroStyle/img/*.*": "@libs/ztree-v3css/metroStyle/img/",
-"@node_modules/@ztree/ztree_v3/css/zTreeStyle/*.*": "@libs/ztree-v3/csszTreeStyle/",
-"@node_modules/@ztree/ztree_v3/css/zTreeStyle/img/*.*": "@libs/ztree-v3css/zTreeStyle/img/",
+```html
+<abp-style-bundle name="@ZTreeBundles.Styles.Global" />
+
+<abp-script-bundle name="@ZTreeBundles.Scripts.Global" />
 ```
 
-## 导入Bundle文件
-
-``` html
-<abp-style-bundle name="@ZTreeBundles.Styles.Global"/>
-
-<abp-script-bundle name="@ZTreeBundles.Scripts.Global"/>
-```
 具体可参考[abp bundle](https://docs.abp.io/en/abp/latest/UI/AspNetCore/Bundling-Minification#bundle-contributors)文档
 
 ## 配置
